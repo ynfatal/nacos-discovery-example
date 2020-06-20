@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="nacos-discovery-provider-example" />
+        <module name="nacos-discovery-example" />
+        <module name="nacos-discovery-consumer-example" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="nacos-discovery-consumer-example" target="8" />
+      <module name="nacos-discovery-example" target="1.5" />
+      <module name="nacos-discovery-provider-example" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="nacos-discovery-consumer-example" options="" />
+      <module name="nacos-discovery-example" options="" />
+      <module name="nacos-discovery-provider-example" options="" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: service-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      # nacos用户账号（在 Nacos Server端打开权限控制开关）
+      # https://nacos.io/zh-cn/blog/nacos%201.2.0%20guide.html
+      username: nacos
+      password: 123456

@@ -1,0 +1,12 @@
+server:
+  port: 18082
+#  port: 18084
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*" # 需要加上双引号，否则报错，exclude 也相同

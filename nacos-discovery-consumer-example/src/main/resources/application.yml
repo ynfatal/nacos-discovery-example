@@ -1,0 +1,27 @@
+server:
+  port: 18083
+
+spring:
+  application:
+    name: service-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      username: nacos
+      password: 123456
+
+feign:
+  sentinel:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+# 是否集成 Ribbon，默认为 true
+#ribbon:
+#  nacos:
+#    enabled: true
