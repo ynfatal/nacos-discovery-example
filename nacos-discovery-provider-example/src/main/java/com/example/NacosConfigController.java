@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author Belo-betty
+ * @author Fatal
  * @date 2020/6/19
  */
 //@RestController
