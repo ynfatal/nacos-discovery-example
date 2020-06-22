@@ -25,6 +25,7 @@
       <groupId>com.alibaba.cloud</groupId>
       <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
     </dependency>
+    <!-- 偷懒不想多写一个demo来测试，就把测试写这里了，测试 nacos config -->
     <!--<dependency>
       <groupId>com.alibaba.cloud</groupId>
       <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>

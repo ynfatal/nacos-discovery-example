@@ -10,3 +10,19 @@ management:
     web:
       exposure:
         include: "*" # 需要加上双引号，否则报错，exclude 也相同
+
+---
+server:
+  port: 18086
+spring:
+  profiles: provider1
+  application:
+    name: service-provider1
+
+---
+server:
+  port: 18087
+spring:
+  profiles: provider2
+  application:
+    name: service-provider2

@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Fatal
  * @date 2020/6/19
  */
-//@RestController
-//@RefreshScope
+@RestController
+@RefreshScope
 public class NacosConfigController {
 
     @Value("${user.birthday:1997-10-21}")
     private String birthday;
 
-    @GetMapping("/config/share")
+    @GetMapping("/config/extension")
     public String shareConfig() {
-        return "The birthday of user in the sharing configuration is " + birthday;
+        return "The birthday of user in the extension.yml configuration is " + birthday;
     }
 
 }
