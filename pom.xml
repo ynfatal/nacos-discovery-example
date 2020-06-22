@@ -28,7 +28,9 @@
         <version>${spring.cloud.version}</version>
         <type>pom</type>
         <!-- 此作用域仅支持 <dependencyManagement> 标签中 type 为 pom 的依赖项，它指示要替换为指定 pom 的 <dependencyManagement>标签中的有效
-         依赖项列表中的依赖项。由于它们被替换，具有 <scope>import</scope> 的依赖项实际上不参与限制依赖项的传递性 -->
+         依赖项列表中的依赖项。由于它们被替换，具有 <scope>import</scope> 的依赖项实际上不参与限制依赖项的传递性
+         详细内容请参考[官网](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)，后边对这块做个总结
+        -->
         <scope>import</scope>
       </dependency>
       <dependency>
