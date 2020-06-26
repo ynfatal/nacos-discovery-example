@@ -29,6 +29,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * com.netflix.loadbalancer.DynamicServerListLoadBalancer#DynamicServerListLoadBalancer(com.netflix.client.config.IClientConfig, com.netflix.loadbalancer.IRule, com.netflix.loadbalancer.IPing, com.netflix.loadbalancer.ServerList, com.netflix.loadbalancer.ServerListFilter, com.netflix.loadbalancer.ServerListUpdater)
  * com.netflix.loadbalancer.BaseLoadBalancer#BaseLoadBalancer(com.netflix.client.config.IClientConfig, com.netflix.loadbalancer.IRule, com.netflix.loadbalancer.IPing)
  * com.netflix.loadbalancer.BaseLoadBalancer#initWithConfig(com.netflix.client.config.IClientConfig, com.netflix.loadbalancer.IRule, com.netflix.loadbalancer.IPing, com.netflix.loadbalancer.LoadBalancerStats)
+ * com.netflix.loadbalancer.ZoneAwareLoadBalancer#setRule(com.netflix.loadbalancer.IRule)
  * com.netflix.loadbalancer.BaseLoadBalancer#setRule(com.netflix.loadbalancer.IRule)
  */
 @SpringBootApplication
