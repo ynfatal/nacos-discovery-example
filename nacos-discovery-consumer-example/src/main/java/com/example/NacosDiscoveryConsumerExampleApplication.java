@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * Eureka 的，所以得出的结论是 @AutoConfigurationAfter 指定的类如果不存在，那么它可以跳过这个要求进行下一个判断。（不过，源码还没找到
  * 具体实现）
  *
- * Ribbon 默认策略为轮询，轮询实现类为 ZoneAvoidanceRule，这个类继承了 PredicateBasedRule， PredicateBasedRule 又继承了 ClientConfigEnabledRoundRobinRule， ClientConfigEnabledRoundRobinRule 的底层实现又是 RoundRobinRule，不过具体轮询方法是使用 PredicateBasedRule 的 com.netflix.loadbalancer.PredicateBasedRule#choose(java.lang.Object)
+ * Ribbon 默认规则为区域回避，实现类为 ZoneAvoidanceRule，这个类继承了 PredicateBasedRule， PredicateBasedRule 又继承了 ClientConfigEnabledRoundRobinRule， ClientConfigEnabledRoundRobinRule 的底层实现又是 RoundRobinRule（轮询规则），不过具体轮询方法是使用 PredicateBasedRule 的 com.netflix.loadbalancer.PredicateBasedRule#choose(java.lang.Object)
  * 初始化负载均衡默认策略的具体实现在 org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration#ribbonRule(com.netflix.client.config.IClientConfig)，在第一次调用 FeignClient 时触发初始化，作为 Bean 被初始化到 Spring 容器中
  * RibbonClientConfiguration 在第一次调用 FeignClient 时触发初始化，作为 配置Bean 被初始化到 Spring 容器中
  * org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration#ribbonLoadBalancer(com.netflix.client.config.IClientConfig, com.netflix.loadbalancer.ServerList, com.netflix.loadbalancer.ServerListFilter, com.netflix.loadbalancer.IRule, com.netflix.loadbalancer.IPing, com.netflix.loadbalancer.ServerListUpdater)
