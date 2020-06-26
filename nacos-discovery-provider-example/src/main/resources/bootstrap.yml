@@ -9,3 +9,13 @@ spring:
       # https://nacos.io/zh-cn/blog/nacos%201.2.0%20guide.html
       username: nacos
       password: 123456
+################ 下面的环境配置，用于测试 nacos config 的扩展配置，测试服务发现的时候请注释掉  ################
+#      config:
+#        server-addr: 127.0.0.1:8848
+#        file-extension: yaml
+#        extension-configs:
+#          - dataId: extension.yaml
+#            group: DEFAULT_GROUP
+#            refresh: true
+#  profiles:
+#    active: provider1
