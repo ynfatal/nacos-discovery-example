@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * 偷懒不想多写一个demo来测试，就把测试写这里了，测试 nacos config
  * @author Fatal
  * @date 2020/6/19
  */
