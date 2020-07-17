@@ -18,6 +18,7 @@
 
   <modules>
     <module>nacos-discovery-provider-example</module>
+    <module>nacos-discovery-consumer-example</module>
   </modules>
 
   <dependencyManagement>
