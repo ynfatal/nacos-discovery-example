@@ -40,7 +40,7 @@ public class NacosDiscoveryConsumerExampleApplication {
         SpringApplication.run(NacosDiscoveryConsumerExampleApplication.class, args);
     }
 
-    @FeignClient(name = "service-provider", fallback = EchoServiceFallback.class)
+    @FeignClient(name = "service-provider", fallback = EchoServiceFallbackImpl.class)
     public interface EchoService {
 
         @GetMapping("/echo/{str}")
@@ -59,7 +59,7 @@ public class NacosDiscoveryConsumerExampleApplication {
 
     @Component
     public
-    class EchoServiceFallback implements EchoService {
+    class EchoServiceFallbackImpl implements EchoService {
 
         @Override
         public String echo(String str) {
